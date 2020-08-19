@@ -1,0 +1,232 @@
+---
+title: "R Notebook</br>State Reporting Q3"
+author: "<em>Gerardo Pelayo García</em><br><br>`r format(Sys.time(), '%d %B, %Y')`"
+    
+output: 
+  rmdformats::readthedown:
+    self_contained: true
+  html_notebook:
+    number_sections: no
+    toc: yes
+    toc_float:
+      smooth_scroll: yes
+  pdf_document:
+    toc: yes
+---
+
+# Set-Up {.tabset .tabset-fade .tabset-pills}
+
+```{r}
+
+# Check and install missing libraries
+
+list.of.packages <- c("ggplot2","dplyr", "DT", "readxl", "stringr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[
+  ,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Remove temporary variables
+
+rm(list.of.packages)
+rm(new.packages)
+
+# Manual packages (run once)
+# remotes::install_github("juba/rmdformats")
+```
+
+```{r}
+knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE)
+```
+
+# Functions {.tabset .tabset-fade .tabset-pills}
+
+```{r}
+# functions
+numbers_only <- function(x) !grepl('\\D', x)
+
+letters_only <- function(x) !grepl('[A-Za-z]', x)
+
+numextract <- function(string){
+  require(stringr)
+  str_extract(string, "\\-*\\d+\\.*\\d*")
+}
+
+total_jdf <- function(vector, with_blanks=TRUE){
+  sum <- stack(setNames(strsplit(vector, ','), df$program))
+  
+  sum <- rename(sum, 
+    count=values,
+    program=ind)
+
+    sum <- sum[!is.na(sum$count),]
+
+    if(with_blanks){
+    temp1 <- sum[grepl('jdf', tolower(sum$count)),]
+    temp2 <- sum[numbers_only(sum$count),]
+    sum <- rbind(temp1, temp2)
+    } else{
+    sum <- sum[grepl('jdf', tolower(sum$count)),]
+    }
+
+    sum$count <- numextract(sum$count)
+
+    sum <- sum(as.numeric(sum$count))
+    
+    return(cat(sum))
+}
+```
+
+# Results (with unidentified) {.tabset .tabset-fade .tabset-pills}
+
+Outcomes that include counts with unspecified funding.
+```{r}
+# Load data
+library(readxl)
+library(dplyr)
+
+df <- read_excel(
+  'C:/Users/Shadow/Documents/Data/State Reporting/fy20_q3_jdf.xlsx')
+
+df <- rename(df,
+  program=`JDF Quarter 3 FY2019-2020`,
+  youth_work=`Youth Work`,
+  entered_jobs=`Entered Jobs`,
+  retained_jobs=`Retained Jobs`,
+  industry_cred=`Industry Cred.`,
+  northstar_cred=`NorthStar Cred.`,
+  entered_p_s=`Entered P/S`,
+  entered_training=`Entered Training`,
+  partners=`Business Partners`)
+
+df <- data.frame(df)
+
+# gather data across outcomes for Q3
+
+# Sums WITH unidentified funding totals
+# Youth work
+total_jdf(df$youth_work)
+# Entered jobs
+total_jdf(df$entered_jobs)
+# Retained jobs
+total_jdf(df$retained_jobs)
+# Industry credentials 
+total_jdf(df$industry_cred)
+# Northstar credentials
+total_jdf(df$northstar_cred)
+# Entered post-secondary 
+total_jdf(df$entered_p_s)
+# Entered training
+total_jdf(df$entered_training)
+```
+
+# Results (without unidentified) {.tabset .tabset-fade .tabset-pills}
+
+Outcomes that do _not_ include counts with unspecified funding.
+
+```{r}
+# Sums WITHOUT unidentified funding totals
+# Youth work
+total_jdf(df$youth_work, with_blanks = FALSE)
+# Entered jobs
+total_jdf(df$entered_jobs, with_blanks = FALSE)
+# Retained jobs
+total_jdf(df$retained_jobs, with_blanks = FALSE)
+# Industry credentials 
+total_jdf(df$industry_cred, with_blanks = FALSE)
+# Northstar credentials
+total_jdf(df$northstar_cred, with_blanks = FALSE)
+# Entered post-secondary 
+total_jdf(df$entered_p_s, with_blanks = FALSE)
+# Entered training
+total_jdf(df$entered_training, with_blanks = FALSE)
+```
+
+# Results (CALIS) 
+ 
+Outcomes whose data comes from CALIS, not the Excel spreadsheet
+
+```{r}
+# Load data
+library(readxl)
+library(dplyr)
+
+
+# Data that ignores min. attendance of 12 hours to be included in data
+df_calis_all <- read_excel(
+  'C:/Users/Shadow/Documents/Data/State Reporting/q3_fy20_ignore_rule.xlsx', 3)
+
+# Outcome: recruitment
+df_calis_all <- rename(df_calis_all, 
+  id=`Student Id`)
+df_calis_all <- subset(df_calis_all, select=c(id))
+df_calis_all <- distinct(df_calis_all)
+
+# Total recruited
+cat(nrow(df_calis_all))
+```
+
+```{r}
+# Load data
+library(readxl)
+library(dplyr)
+
+
+# Data that does NOT ignore min. attendance of 12 hours to be included in data
+df_calis <- read_excel(
+  'C:/Users/Shadow/Documents/Data/State Reporting/q3_fy20.xlsx', 3)
+
+# Outcome: recruitment
+temp <- rename(df_calis, 
+  id=`Student Id`)
+temp <- subset(temp, select=c(id))
+temp <- distinct(temp)
+
+# Total enrolled
+cat(nrow(temp))
+
+# Outcome: MSG (measurable skill gain/high school equivalent (HSE))
+temp <- rename(df_calis, 
+  id=`Student Id`,
+  msg=`First PoP Gain Type`)
+temp <- subset(temp, select=c(id, msg))
+
+# Total with MSG
+cat(nrow(temp[!is.na(temp$msg),]))
+
+# Outcome: high school credentials
+cat(nrow(temp[grepl('HSE', temp$msg),]))
+
+# Outcome: gained an EFL 
+cat(nrow(temp[grepl('EFL', temp$msg),]))
+
+# Outcome: work experiences???
+```
+# Verify CALIS data
+
+Parameters specified within CALIS for each data source (page 1 of Excel sheet)
+
+```{r}
+# Load data
+library(readxl)
+library(dplyr)
+library(DT)
+
+# Data: does ignore min. attendance rule
+df_calis_all <- read_excel(
+  'C:/Users/Shadow/Documents/Data/State Reporting/q3_fy20_ignore_rule.xlsx', 1,
+  col_names = FALSE)
+datatable(df_calis_all)
+
+# Data: does NOT ignore min. attendance rule
+df_calis <- read_excel(
+  'C:/Users/Shadow/Documents/Data/State Reporting/q3_fy20.xlsx', 1,
+  col_names = FALSE)
+
+datatable(df_calis)
+
+```
+
+
+
+ 
+
