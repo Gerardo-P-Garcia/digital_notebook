@@ -1,0 +1,81 @@
+---
+title: "Algebra Lesson Title Goes Here"
+    
+output: 
+  rmdformats::readthedown:
+    self_contained: true
+  html_notebook:
+    number_sections: no
+    toc: yes
+    toc_float:
+      smooth_scroll: yes
+  pdf_document:
+    toc: yes
+---
+
+```{r include=FALSE}
+
+# Check and install missing libraries
+
+list.of.packages <- c("ggplot2","dplyr", "DT", "readxl", "stringr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[
+  ,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Remove temporary variables
+
+rm(list.of.packages)
+rm(new.packages)
+
+# Manual packages (run once)
+# remotes::install_github("juba/rmdformats")
+```
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE, echo=FALSE)
+```
+
+# Header 1
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+## Subheader 1
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+## Subheader 2
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+# Header 2
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+
+## Subheader 1
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+## Power Point Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQMBdagNW9dyhEpPG1gSz9f2dPlpFlnGQvd5kYYFru4Ggc25kzdcXQRFegT9iQiJl3VbsUEvkuzIGoY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="560" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+## Youtube Video
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/MfNa7J6Zfcs"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+  picture-in-picture" allowfullscreen></iframe>
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+## Subheader 4
+
+Lorem ipsum dolor sit amet, rutrum at, cras est sed, ac non aenean facilisis aenean. Nec quisque erat culpa sed posuere, aenean sollicitudin proin repellendus, duis in facilisis ligula elit nec, morbi donec, non quam tempor nibh. Feugiat purus ut pede et massa suscipit, non varius diam vulputate quis, gravida ligula, voluptatem nibh, arcu pellentesque. Non non integer vestibulum, ac lobortis in inceptos eget. Placerat ultricies per vestibulum. Natoque metus nulla, nulla nullam nullam ante malesuada. Nec lobortis in donec semper, nam ac lacus felis lacus duis sit, arcu commodo dolor aptent sunt tortor. Montes pede commodo massa, lacus justo vel ratione quis quisque, accumsan gravida tempus dolor proin, dolor dictum integer ante.
+
+
+<details><summary>Hidden text</summary>no longer hidden</details>
+
+ 
+
