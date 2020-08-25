@@ -1,0 +1,292 @@
+---
+title: "Solving Equations by Combining Like Terms"
+    
+output: 
+  rmdformats::readthedown:
+    self_contained: true
+  html_notebook:
+    number_sections: no
+    toc: yes
+    toc_float:
+      smooth_scroll: yes
+  pdf_document:
+    toc: yes
+---
+
+
+
+```{r include=FALSE}
+
+# Check and install missing libraries
+
+list.of.packages <- c("ggplot2","dplyr", "DT", "readxl", "stringr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[
+  ,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Remove temporary variables
+
+rm(list.of.packages)
+rm(new.packages)
+
+# Manual packages (run once)
+# remotes::install_github("juba/rmdformats")
+```
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE, echo=FALSE)
+```
+<!--
+# Vocabulary
+
+## Like Terms
+
+## Addition Property of Equality
+
+## Division Property of Equality
+
+## Inverse Operations
+
+## Multiplication Property of Equality
+
+## Subtraction Property of Equality
+-->
+
+
+# Examples of Math Properties
+
+## Addition Property of Equality
+
+_If two sides of an equation are equal, they will remain equal if we add the same number to each side._
+
+<b>General Example</b>
+
+Let _x_, _y_, and _z_ be any numbers.
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  x + z &= y + z && \text{Adding } z \text{ results in 2 equal sides.}
+\end{align}
+$$
+
+<b>Specific Example</b>
+
+We can use specific numbers to make this more intuitive, substituting _x_, _y_, and _z_ for any values. 
+
+Let _x = 2_, _y = 2_, and _z = 5_,
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  2 &= 2 && \text{Substitute } x \text{ and } y \text{ with their values (2).}\\
+  2 + z &= 2+ z && \text{Add } z \text{ to both sides.}\\
+  2 + 5 &= 2 + 5 && \text{Substitute } z\text{ for its value (5).}\\
+  7 &= 7 && \text{Each side remains equal.}
+\end{align}
+$$
+
+If you would like a more thorough explanation, here is a Khan Academy video introducing the property. (You should stop the video by 4:30.)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sYyiinqF8Q4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+## Subtraction Property of Equality
+
+_If two sides of an equation are equal, they will remain equal if we subtract the same number from each side._
+
+<b>General Example</b>
+
+Let _x_, _y_, and _z_ be any numbers.
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  x - z &= y - z && \text{Subtracting } z \text{ results in 2 equal sides.}
+\end{align}
+$$
+
+<b>Specific Example</b>
+
+We can use specific numbers to make this more intuitive, substituting _x_, _y_, and _z_ for any values. 
+
+Let _x = 8_, _y = 8_, and _z = 3_,
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  8 &= 8 && \text{Substitute } x \text{ and } y \text{ with their values (8).}\\
+  8 - z &= 8 - z && \text{Subtract } z \text{ from both sides.}\\
+  8 - 3 &= 8 - 3 && \text{Substitute } z\text{ for its value (3).}\\
+  5 &= 5 && \text{Each side remains equal.}
+\end{align}
+$$
+
+If we recognize that subtracting is the same as adding a _negative_ number:
+
+$$
+\begin{align}
+  8 - 3 &= 8 + (-3)
+\end{align}
+$$
+
+Then it is clear that the _Addition_ and _Subtraction Properties of Equality_ are essentially the same.
+
+<hr>
+
+## Multiplication Property of Equality
+
+_If two sides of an equation are equal, they will remain equal if we multiply the same number to each side._
+
+<b>General Example</b>
+
+Let _x_, _y_, and _z_ be any numbers.
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  x \cdot z &= y \cdot z && \text{Multiplying } z \text{ results in 2 equal sides.}
+\end{align}
+$$
+
+<b>Specific Example</b>
+
+We can use specific numbers to make this more intuitive, substituting _x_, _y_, and _z_ for any values. 
+
+Let _x = 2_, _y = 2_, and _z = 5_,
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  2 &= 2 && \text{Substitute } x \text{ and } y \text{ with their values (2).}\\
+  2 \cdot z &= 2 \cdot z && \text{Multiply } z \text{ to both sides.}\\
+  2 \cdot 5 &= 2 \cdot 5 && \text{Substitute } z\text{ for its value (5).}\\
+  10 &= 10 && \text{Each side remains equal.}
+\end{align}
+$$
+
+If you would like a more thorough explanation, here is a Khan Academy video introducing the property. (By 2:00 he starts using equations as examples.)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LhcYPnfyQtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+## Division Property of Equality
+
+_If two sides of an equation are equal, they will remain equal if we divide the same number from each side._
+
+<b>General Example</b>
+
+Let _x_, _y_, and _z_ be any numbers.
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  \frac{x}{z} &= \frac{y}{z} && \text{Dividing } z \text{ results in 2 equal sides.}
+\end{align}
+$$
+
+<b>Specific Example</b>
+
+We can use specific numbers to make this more intuitive, substituting _x_, _y_, and _z_ for any values. 
+
+Let _x = 12_, _y = 12_, and _z = 4_,
+
+$$
+\begin{align}
+  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+  12 &= 12 && \text{Substitute } x \text{ and } y \text{ with their values (12).}\\
+  \frac{12}{z} &= \frac{12}{z} && \text{Divide } z \text{ from both sides.}\\
+  \frac{12}{4} &= \frac{12}{4} && \text{Substitute } z\text{ for its value (4).}\\
+  3 &= 3 && \text{Each side remains equal.}
+\end{align}
+$$
+
+If we recognize that division is the same as multiplying by the reciprocal of a number:
+
+$$
+\begin{align}
+  \frac{12}{4} &= 12 \cdot \frac{1}{4}
+\end{align}
+$$
+
+Then it becomes clear that the _Multiplication_ and _Division Properties of Equality_ are essentially the same.
+
+<hr>
+
+## Practice
+
+Identify which property is being used for each equation.
+
+$$
+\begin{align}
+  x + 1 &= 9\\
+  -1 & -1\\
+  x &= 8
+\end{align}
+$$
+
+<details><summary>Show Answer</summary>Subtraction Property of Equality</details>
+
+$$
+\begin{align}
+  x - 5 &= 5\\
+  +5 & +5\\
+  x &= 10
+\end{align}
+$$
+
+<details><summary>Show Answer</summary>Addition Property of Equality</details>
+
+$$
+\begin{align}
+  \frac{3x}{3} &= \frac{18}{3}\\
+  x &= 6
+\end{align}
+$$
+
+<details><summary>Show Answer</summary>Division Property of Equality</details>
+
+$$
+\begin{align}
+  \frac{x}{5} \cdot 5 &= 4 \cdot5\\
+  x &= 20
+\end{align}
+$$
+
+<details><summary>Show Answer</summary>Multiplication Property of Equality</details>
+
+<hr>
+
+
+
+# Combining Like Terms to Solve Equations
+
+$$
+\begin{align}
+  3+x &=4 && \text{(Solve for} x \text{.)}\\
+  x &=4-3 && \text{(Subtract 3 from both sides.)}\\
+  x &=1   && \text{(Yielding the solution.)}
+\end{align}
+$$
+<!--
+
+## Power Point Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQMBdagNW9dyhEpPG1gSz9f2dPlpFlnGQvd5kYYFru4Ggc25kzdcXQRFegT9iQiJl3VbsUEvkuzIGoY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="560" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+## Youtube Video
+
+ <iframe src="https://www.youtube.com/embed/MfNa7J6Zfcs"
+  frameborder="0" width="560" height="315" allow="accelerometer; autoplay;
+  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+<details><summary>Hidden text</summary>no longer hidden</details>
+
+ -->
+
