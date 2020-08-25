@@ -55,6 +55,8 @@ knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE, echo=FALSE
 
 # Examples of Math Properties
 
+<hr>
+
 ## Addition Property of Equality
 
 _If two sides of an equation are equal, they will remain equal if we add the same number to each side._
@@ -259,17 +261,195 @@ $$
 
 <hr>
 
+<br>
+
+# Combining Like Terms
+
+<hr>
+
+## Like Terms on the Same Side
+
+If two or more terms **on the same side of the equation** and 1) share the <u>same variable</u> or 2) are both <u>constants</u>. We are _adding_ theese terms while paying attention to the sign (_+_ or _-_) before each term being combined.
 
 
-# Combining Like Terms to Solve Equations
+<b>Example with Shared Variables and Constants</b>
 
 $$
 \begin{align}
-  3+x &=4 && \text{(Solve for} x \text{.)}\\
-  x &=4-3 && \text{(Subtract 3 from both sides.)}\\
-  x &=1   && \text{(Yielding the solution.)}
+  1x + 2x + 3x + 4 + 5 &= 6\\
+  \color{blue}{1x+2x+3x}+\color{red}{4+5} &= 6 && \text{Identify like terms.}\\
+  \color{blue}{6x}+\color{red}{4+5} &= 6 && \text{Combine like terms (same variable).}\\
+  \color{blue}{6x}+\color{red}{9} &= 6 && \text{Combine like terms (constants).}
 \end{align}
 $$
+
+<b>Example with Different Variables</b>
+
+$$
+\begin{align}
+  2a - 4a + 5 &= -3b+b\\
+  \color{blue}{2a - 4a} + 5 &= \color{red}{-3b - b} && \text{Identify like terms.}\\
+  \color{blue}{-2a} + 5&= \color{red}{-3b - b} && \text{Combine like terms (} a \text{).}\\
+  \color{blue}{-2a} + 5 &= \color{red}{-4b} && \text{Combine like terms(} b \text{).}
+\end{align}
+$$
+
+
+Here are examples of equations being solved by combining like terms on the same side.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wskwG4PSntU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+## Practice
+
+Simplify each equation by combining like terms on the same side of each equation. Do not solve for the variable(s).
+
+$$
+2x + 3x = 8
+$$
+
+<details><summary>Show Answer</summary>
+$$
+\begin{align}
+  2x + 3x &= 8 && \text{Combine x terms.}\\
+  5x &= 8
+\end{align}
+$$
+</details>
+
+<br>
+
+$$
+3x + 6x - 3 + 2x = 5y - 4y + 2
+$$
+
+<details><summary>Show Answer</summary>
+$$
+\begin{align}
+  3x + 6x - 3 + 2x &= 5y - 4y + 2\\
+  11x - 3 &= 5y - 4y + 2 && \text{Combine x terms.}\\
+  11x - 3 &= y + 2 && \text{Combine y terms.}
+\end{align}
+$$
+</details>
+
+<br>
+
+$$
+-2a + 4a - b + 7c + 2c = -3 + 4
+$$
+
+
+<details><summary>Show Answer</summary>
+$$
+\begin{align}
+  -2a + 4a - b + 7c + 2c &= -3 + 4\\
+  2a - b + 7c + 2c &= -3 + 4 && \text{Combine a terms.}\\
+  2a - b + 9c &= -3 + 4 && \text{Combine c terms.}\\
+  2a - b + 9c &= 1 && \text{Combine constants.}
+\end{align}
+$$
+
+</details>
+
+<br>
+
+
+If you would like additional practice combining like terms, [you can go here](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:combine-like-terms/e/combining_like_terms_1).
+<hr>
+
+## Like Terms on Opposite Sides
+
+If like terms are on **opposite** sides of an  equation, we use _inverse_ operations to eliminate one.
+
+While it does not matter _which_ term you eliminate, isolating the variable will save us a step. Every example will focus on isolating the variable, but your answers are not necessarily wrong.
+
+<b>Example</b>
+
+$$
+\begin{align}
+  3x &= -2 + 2x\\
+  \color{blue}{3x} &= -2 \color{blue}{+ 2x} && \text{Identify the like terms.}\\
+  \color{red}{-2x} & \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }
+    \text{ } \color{red}{-2x} && \text{Eliminate +2x by subtracting 2x}\\
+  x &= -2
+\end{align}
+$$
+
+If a term does not have a sign before it, the term is _positive_. We treat positive terms as addition, and it can be helpful to insert 'plus' signs (_+_) before positive terms to make it easier to see their signs.
+
+$$
+\begin{align}
+  4x &= 2x - 5 && \text{4x, 2x are positive with no signs.}\\
+  \color{red}{+4x} &= \color{red}{+2x} - 5 && \text{Insert a + sign before 4x, 2x.}\\
+  \color{blue}{+4x} &= \color{blue}{+2x} - 5 && \text{Identify like terms.}\\
+  -2x &= -2x && \text{Eliminate +2x by subtracting 2x}\\
+  2x &= -5
+\end{align}
+$$
+
+Finally, we should **always combine like terms on the same side <u>first</u>** whenever possible.
+
+
+<b>Example</b>
+
+$$
+\begin{align}
+  5a + 3a &= 2a + 12\\
+  \color{blue}{5a + 3a} &= 2a + 12 && \text{Identify like terms on the same side.}\\
+  \color{blue}{8a} &= 2a + 12 && \text{Combine like terms.}\\
+  \color{red}{5a} &= \color{red}{2a} + 12 && \text{Identify like terms on opposite sides.}\\
+  -2a & -2a && \text{Eliminate positive 2a by subtracting 2a.}\\
+  3a &= 12
+\end{align}
+$$
+
+
+Here's an example of an equation being solved by combining like terms on opposite sides.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9teKXGoWIQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+## Practice
+
+Combine like terms on opposite sides of each equation. Your answer may be different and still be correct, but prioritize isolating a variable in your step.
+
+$$
+5a - 3b = 4a + 2
+$$
+
+<details><summary>Show Answer</summary>
+$$
+\begin{align}
+  \color{blue}{5a} - 3b &= \color{blue}{4a} + 2 \\
+  -4a\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }
+    & -4a && \text{Eliminate positive 4a by subtracting 4a.}\\
+  a - 3b &= 2
+\end{align}
+$$
+</details>
+
+<br>
+
+$$
+-3x + 2y = 5x + 3
+$$
+
+<details><summary>Show Answer</summary>
+$$
+\begin{align}
+  \color{blue}{-3x} + 2y &= \color{blue}{5x} + 3 \\
+  +3x\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }
+    & +3x && \text{Eliminate -3x by adding 3x.}\\
+  2y  &= 8x + 3
+\end{align}
+$$
+</details>
+
+<br>
+
 <!--
 
 ## Power Point Slides
