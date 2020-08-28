@@ -65,12 +65,9 @@ _If two sides of an equation are equal, they will remain equal if we add the sam
 
 Let _x_, _y_, and _z_ be any numbers.
 
-$$
-\begin{align}
-  x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
+$\begin{align}x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   x + z &= y + z && \text{Adding } z \text{ results in 2 equal sides.}
-\end{align}
-$$
+\end{align}$
 
 <b>Specific Example</b>
 
@@ -78,15 +75,13 @@ We can use specific numbers to make this more intuitive, substituting _x_, _y_, 
 
 Let _x = 2_, _y = 2_, and _z = 5_,
 
-$$
-\begin{align}
+$\begin{align}
   x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   2 &= 2 && \text{Substitute } x \text{ and } y \text{ with their values (2).}\\
   2 + z &= 2+ z && \text{Add } z \text{ to both sides.}\\
   2 + 5 &= 2 + 5 && \text{Substitute } z\text{ for its value (5).}\\
   7 &= 7 && \text{Each side remains equal.}
-\end{align}
-$$
+\end{align}$
 
 If you would like a more thorough explanation, here is a Khan Academy video introducing the property. (You should stop the video by 4:30.)
 
@@ -102,12 +97,10 @@ _If two sides of an equation are equal, they will remain equal if we subtract th
 
 Let _x_, _y_, and _z_ be any numbers.
 
-$$
-\begin{align}
+$\begin{align}
   x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   x - z &= y - z && \text{Subtracting } z \text{ results in 2 equal sides.}
-\end{align}
-$$
+\end{align}$
 
 <b>Specific Example</b>
 
@@ -115,23 +108,19 @@ We can use specific numbers to make this more intuitive, substituting _x_, _y_, 
 
 Let _x = 8_, _y = 8_, and _z = 3_,
 
-$$
-\begin{align}
+$\begin{align}
   x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   8 &= 8 && \text{Substitute } x \text{ and } y \text{ with their values (8).}\\
   8 - z &= 8 - z && \text{Subtract } z \text{ from both sides.}\\
   8 - 3 &= 8 - 3 && \text{Substitute } z\text{ for its value (3).}\\
   5 &= 5 && \text{Each side remains equal.}
-\end{align}
-$$
+\end{align}$
 
 If we recognize that subtracting is the same as adding a _negative_ number:
 
-$$
-\begin{align}
+$\begin{align}
   8 - 3 &= 8 + (-3)
-\end{align}
-$$
+\end{align}$
 
 Then it is clear that the _Addition_ and _Subtraction Properties of Equality_ are essentially the same.
 
@@ -145,12 +134,10 @@ _If two sides of an equation are equal, they will remain equal if we multiply th
 
 Let _x_, _y_, and _z_ be any numbers.
 
-$$
-\begin{align}
+$\begin{align}
   x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   x \cdot z &= y \cdot z && \text{Multiplying } z \text{ results in 2 equal sides.}
-\end{align}
-$$
+\end{align}$
 
 <b>Specific Example</b>
 
@@ -158,15 +145,13 @@ We can use specific numbers to make this more intuitive, substituting _x_, _y_, 
 
 Let _x = 2_, _y = 2_, and _z = 5_,
 
-$$
-\begin{align}
+$\begin{align}
   x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   2 &= 2 && \text{Substitute } x \text{ and } y \text{ with their values (2).}\\
   2 \cdot z &= 2 \cdot z && \text{Multiply } z \text{ to both sides.}\\
   2 \cdot 5 &= 2 \cdot 5 && \text{Substitute } z\text{ for its value (5).}\\
   10 &= 10 && \text{Each side remains equal.}
-\end{align}
-$$
+\end{align}$
 
 If you would like a more thorough explanation, here is a Khan Academy video introducing the property. (By 2:00 he starts using equations as examples.)
 
@@ -182,12 +167,10 @@ _If two sides of an equation are equal, they will remain equal if we divide the 
 
 Let _x_, _y_, and _z_ be any numbers.
 
-$$
-\begin{align}
+$\begin{align}
   x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   \frac{x}{z} &= \frac{y}{z} && \text{Dividing } z \text{ results in 2 equal sides.}
-\end{align}
-$$
+\end{align}$
 
 <b>Specific Example</b>
 
@@ -195,23 +178,19 @@ We can use specific numbers to make this more intuitive, substituting _x_, _y_, 
 
 Let _x = 12_, _y = 12_, and _z = 4_,
 
-$$
-\begin{align}
+$\begin{align}
   x &= y && \text{Numbers } x \text{ and } y \text{ are equal.}\\
   12 &= 12 && \text{Substitute } x \text{ and } y \text{ with their values (12).}\\
   \frac{12}{z} &= \frac{12}{z} && \text{Divide } z \text{ from both sides.}\\
   \frac{12}{4} &= \frac{12}{4} && \text{Substitute } z\text{ for its value (4).}\\
   3 &= 3 && \text{Each side remains equal.}
-\end{align}
-$$
+\end{align}$
 
 If we recognize that division is the same as multiplying by the reciprocal of a number:
 
-$$
-\begin{align}
+$\begin{align}
   \frac{12}{4} &= 12 \cdot \frac{1}{4}
-\end{align}
-$$
+\end{align}$
 
 Then it becomes clear that the _Multiplication_ and _Division Properties of Equality_ are essentially the same.
 
@@ -221,41 +200,33 @@ Then it becomes clear that the _Multiplication_ and _Division Properties of Equa
 
 Identify which property is being used for each equation.
 
-$$
-\begin{align}
+$\begin{align}
   x + 1 &= 9\\
   -1 & -1\\
   x &= 8
-\end{align}
-$$
+\end{align}$
 
 <details><summary>Show Answer</summary>Subtraction Property of Equality</details>
 
-$$
-\begin{align}
+$\begin{align}
   x - 5 &= 5\\
   +5 & +5\\
   x &= 10
-\end{align}
-$$
+\end{align}$
 
 <details><summary>Show Answer</summary>Addition Property of Equality</details>
 
-$$
-\begin{align}
+$\begin{align}
   \frac{3x}{3} &= \frac{18}{3}\\
   x &= 6
-\end{align}
-$$
+\end{align}$
 
 <details><summary>Show Answer</summary>Division Property of Equality</details>
 
-$$
-\begin{align}
+$\begin{align}
   \frac{x}{5} \cdot 5 &= 4 \cdot5\\
   x &= 20
-\end{align}
-$$
+\end{align}$
 
 <details><summary>Show Answer</summary>Multiplication Property of Equality</details>
 
@@ -274,25 +245,21 @@ If two or more terms **on the same side of the equation** and 1) share the <u>sa
 
 <b>Example with Shared Variables and Constants</b>
 
-$$
-\begin{align}
+$\begin{align}
   1x + 2x + 3x + 4 + 5 &= 6\\
   \color{blue}{1x+2x+3x}+\color{red}{4+5} &= 6 && \text{Identify like terms.}\\
   \color{blue}{6x}+\color{red}{4+5} &= 6 && \text{Combine like terms (same variable).}\\
   \color{blue}{6x}+\color{red}{9} &= 6 && \text{Combine like terms (constants).}
-\end{align}
-$$
+\end{align}$
 
 <b>Example with Different Variables</b>
 
-$$
-\begin{align}
+$\begin{align}
   2a - 4a + 5 &= -3b+b\\
   \color{blue}{2a - 4a} + 5 &= \color{red}{-3b - b} && \text{Identify like terms.}\\
   \color{blue}{-2a} + 5&= \color{red}{-3b - b} && \text{Combine like terms (} a \text{).}\\
   \color{blue}{-2a} + 5 &= \color{red}{-4b} && \text{Combine like terms(} b \text{).}
-\end{align}
-$$
+\end{align}$
 
 
 Here are examples of equations being solved by combining like terms on the same side.
@@ -305,51 +272,39 @@ Here are examples of equations being solved by combining like terms on the same 
 
 Simplify each equation by combining like terms on the same side of each equation. Do not solve for the variable(s).
 
-$$
-2x + 3x = 8
-$$
+$2x + 3x = 8$
 
 <details><summary>Show Answer</summary>
-$$
-\begin{align}
+$\begin{align}
   2x + 3x &= 8 && \text{Combine x terms.}\\
   5x &= 8
-\end{align}
-$$
+\end{align}$
 </details>
 
 <br>
 
-$$
-3x + 6x - 3 + 2x = 5y - 4y + 2
-$$
+$3x + 6x - 3 + 2x = 5y - 4y + 2$
 
 <details><summary>Show Answer</summary>
-$$
-\begin{align}
+$\begin{align}
   3x + 6x - 3 + 2x &= 5y - 4y + 2\\
   11x - 3 &= 5y - 4y + 2 && \text{Combine x terms.}\\
   11x - 3 &= y + 2 && \text{Combine y terms.}
-\end{align}
-$$
+\end{align}$
 </details>
 
 <br>
 
-$$
--2a + 4a - b + 7c + 2c = -3 + 4
-$$
+$-2a + 4a - b + 7c + 2c = -3 + 4$
 
 
 <details><summary>Show Answer</summary>
-$$
-\begin{align}
+$\begin{align}
   -2a + 4a - b + 7c + 2c &= -3 + 4\\
   2a - b + 7c + 2c &= -3 + 4 && \text{Combine a terms.}\\
   2a - b + 9c &= -3 + 4 && \text{Combine c terms.}\\
   2a - b + 9c &= 1 && \text{Combine constants.}
-\end{align}
-$$
+\end{align}$
 
 </details>
 
@@ -367,43 +322,37 @@ While it does not matter _which_ term you eliminate, isolating the variable will
 
 <b>Example</b>
 
-$$
-\begin{align}
+$\begin{align}
   3x &= -2 + 2x\\
   \color{blue}{3x} &= -2 \color{blue}{+ 2x} && \text{Identify the like terms.}\\
   \color{red}{-2x} & \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }
     \text{ } \color{red}{-2x} && \text{Eliminate +2x by subtracting 2x}\\
   x &= -2
-\end{align}
-$$
+\end{align}$
 
 If a term does not have a sign before it, the term is _positive_. We treat positive terms as addition, and it can be helpful to insert 'plus' signs (_+_) before positive terms to make it easier to see their signs.
 
-$$
-\begin{align}
+$\begin{align}
   4x &= 2x - 5 && \text{4x, 2x are positive with no signs.}\\
   \color{red}{+4x} &= \color{red}{+2x} - 5 && \text{Insert a + sign before 4x, 2x.}\\
   \color{blue}{+4x} &= \color{blue}{+2x} - 5 && \text{Identify like terms.}\\
   -2x &= -2x && \text{Eliminate +2x by subtracting 2x}\\
   2x &= -5
-\end{align}
-$$
+\end{align}$
 
 Finally, we should **always combine like terms on the same side <u>first</u>** whenever possible.
 
 
 <b>Example</b>
 
-$$
-\begin{align}
+$\begin{align}
   5a + 3a &= 2a + 12\\
   \color{blue}{5a + 3a} &= 2a + 12 && \text{Identify like terms on the same side.}\\
   \color{blue}{8a} &= 2a + 12 && \text{Combine like terms.}\\
   \color{red}{5a} &= \color{red}{2a} + 12 && \text{Identify like terms on opposite sides.}\\
   -2a & -2a && \text{Eliminate positive 2a by subtracting 2a.}\\
   3a &= 12
-\end{align}
-$$
+\end{align}$
 
 
 Here's an example of an equation being solved by combining like terms on opposite sides.
@@ -416,36 +365,28 @@ Here's an example of an equation being solved by combining like terms on opposit
 
 Combine like terms on opposite sides of each equation. Your answer may be different and still be correct, but prioritize isolating a variable in your step.
 
-$$
-5a - 3b = 4a + 2
-$$
+$5a - 3b = 4a + 2$
 
 <details><summary>Show Answer</summary>
-$$
-\begin{align}
+$\begin{align}
   \color{blue}{5a} - 3b &= \color{blue}{4a} + 2 \\
   -4a\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }
     & -4a && \text{Eliminate positive 4a by subtracting 4a.}\\
   a - 3b &= 2
-\end{align}
-$$
+\end{align}$
 </details>
 
 <br>
 
-$$
--3x + 2y = 5x + 3
-$$
+$-3x + 2y = 5x + 3$
 
 <details><summary>Show Answer</summary>
-$$
-\begin{align}
+$\begin{align}
   \color{blue}{-3x} + 2y &= \color{blue}{5x} + 3 \\
   +3x\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }
     & +3x && \text{Eliminate -3x by adding 3x.}\\
   2y  &= 8x + 3
-\end{align}
-$$
+\end{align}$
 </details>
 
 <br>

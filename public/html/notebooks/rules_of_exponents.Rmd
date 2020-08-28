@@ -1,0 +1,217 @@
+---
+title: "Laws of Exponents"
+    
+output: 
+  rmdformats::readthedown:
+    self_contained: true
+    toc_depth: 2
+    number_sections: false
+    smooth_scroll: yes
+  html_notebook:
+    number_sections: true
+    toc: yes
+    toc_float:
+      smooth_scroll: yes
+  pdf_document:
+    toc: yes
+---
+
+<style>
+
+#content{
+    background:#fcfcfc;
+    height:100%;
+    margin-left:150px;
+    /* margin:auto; */
+    max-width:1050px;
+    min-height:100%;
+}
+
+#sidebar {
+    color: /*#D9AB16;*/ #B30000;
+    background: /*#113458;*/ #B30000;
+    width: 150px;
+}
+
+#sidebar h2 {
+    color: #FFFFFF;
+    background-color: #153881;
+}
+
+#sidebar a {
+    color: /*#3F4548;*/#FFFFFF;
+    background-color: #153B81;
+}
+
+#sidebar a:hover {
+    background-color: /*#3F4548; #153B81;*/ #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+
+#postamble{
+    color:#fcfcfc;
+    background:#153881;
+    border-top:solid 10px #153881;
+    font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+    font-size: 90%;
+    z-index:400;
+    padding:12px;
+}
+
+div.highlight_blue { 
+    background-color:#e6f0ff;
+    border-radius: 5px; 
+    padding: 5px;
+}
+
+div.highlight_red { 
+    background-color:#ffe6ea;
+    border-radius: 5px;
+    padding: 5px;
+}
+    
+#main .nav-pills {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#main .nav-pills > li > a {
+    background-color: #EEEEEE;
+    background-image: none;
+    background-position: 0 0;
+    color: #153B81;
+}
+
+#main .nav-pills > li > a:hover {
+  color: #FFFFFF !important;
+  background-color: #153B81;
+}
+
+#main .nav-pills > li.active > a,
+#main .nav-pills > li.active > a:hover,
+#main .nav-pills > li.active > a:focus {
+  color: #FFFFFF !important;
+  background-color: #153B81;
+}
+
+</style>
+
+```{r include=FALSE}
+
+# Check and install missing libraries
+
+list.of.packages <- c("ggplot2","dplyr", "DT", "readxl", "stringr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[
+  ,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Remove temporary variables
+
+rm(list.of.packages)
+rm(new.packages)
+
+# Manual packages (run once)
+# remotes::install_github("juba/rmdformats")
+```
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE, echo=FALSE)
+```
+
+
+
+# Negative Exponents
+
+## Notes
+
+<div class='highlight_blue'>
+There are two ways we can think about negative exponents:
+
+1. The base is on the **_wrong side_** of the fraction line.
+
+2. You need to **_divide_** by this number that many times, not multiply.
+</div>
+
+If you want to remove the negative sign, flip the base and its exponent to the other side
+of the fraction. The negative in the exponent is removed _after_ the flip.
+
+### Example:
+
+$$\begin{align}\frac{3}{2}^{-4}=\frac{1}{2\cdot3^4} && \text{Base 3 flips, power -4 becomes 4.}\end{align}$$
+
+If the negative exponent has a base with parentheses, both sides of the fraction flip 
+with **_nothing inside the fraction changing except where it is._**
+
+### Examples:
+
+$$\begin{align}
+(\frac{3}{2})^{-4}&=(\frac{2}{3})^{4} && \text{2 and 3 flip.}\\
+  (\frac{-2}{-5})^{-4}&=(\frac{-5}{-2})^{4} && \text{-2 and -5 flip.}\\
+  (\frac{(3)^{-1}}{(2)^{-3}})^{-4}&=(\frac{2^{-3}}{3^{-1}})^{4} && \text{Keep negative exponents inside.}
+\end{align}$$
+
+
+If you have multiple terms being multipled together, individual bases will move.
+
+Example:
+
+$$\begin{align}\frac{-1^3\cdot3^{-2}}{(-4)^{-2}\cdot7^4}=\frac{-1^3\cdot(-4)^2}{3^2\cdot7^4} 
+  && \text{Bases 3 and -4 flip.}\end{align}$$
+
+Below is a video if you would like more review. You can find practice problems on [Khan Academy](https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-negative-exponents/e/exponents_2) and [IXL](https://www.ixl.com/math/algebra-1/negative-exponents) (click the hyperlinks). You should sign in using your Argosy email before starting.
+
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/JnpqlXN9Whw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+# Practice {.tabset .tabset-pills .tabset-fade}
+
+<div class='highlight_red'>
+<strong>Directions:</strong>
+
+1. Click _Continue without signing in_ below.
+
+2. Type your first name and last initial.
+
+3. Begin the activity.
+
+</div>
+
+## Mild
+
+<iframe src='https://student.desmos.com/join/m5962r' width='100%' height='615' 
+  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'/>
+
+<details><summary>Show Explanation</summary>
+Testing
+</details>
+
+
+## Medium
+
+<iframe src='https://student.desmos.com/join/pxray9' width='100%' height='615' 
+  allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'/>
+
+## Spicy
+<!--
+
+## Power Point Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQMBdagNW9dyhEpPG1gSz9f2dPlpFlnGQvd5kYYFru4Ggc25kzdcXQRFegT9iQiJl3VbsUEvkuzIGoY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="560" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+## Youtube Video
+
+ <iframe src="https://www.youtube.com/embed/MfNa7J6Zfcs"
+  frameborder="0" width="560" height="315" allow="accelerometer; autoplay;
+  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+<details><summary>Hidden text</summary>no longer hidden</details>
+
+ -->
+
