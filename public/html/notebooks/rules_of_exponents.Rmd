@@ -148,18 +148,18 @@ with **_nothing inside the fraction changing except where it is._**
 $$\begin{align}
 (\frac{3}{2})^{-4}&=(\frac{2}{3})^{4} && \text{2 and 3 flip.}\\
   (\frac{-2}{-5})^{-4}&=(\frac{-5}{-2})^{4} && \text{-2 and -5 flip.}\\
-  (\frac{(3)^{-1}}{(2)^{-3}})^{-4}&=(\frac{2^{-3}}{3^{-1}})^{4} && \text{Keep negative exponents inside.}
+  (\frac{(3)^{-1}}{(2)^{-3}})^{-4}&=(\frac{(2)^{-3}}{(3)^{-1}})^{4} && \text{Keep negative exponents inside. Power -4 becomes 4.}
 \end{align}$$
 
 
 If you have multiple terms being multipled together, individual bases will move.
 
-Example:
+### Example:
 
 $$\begin{align}\frac{-1^3\cdot3^{-2}}{(-4)^{-2}\cdot7^4}=\frac{-1^3\cdot(-4)^2}{3^2\cdot7^4} 
   && \text{Bases 3 and -4 flip.}\end{align}$$
 
-Below is a video if you would like more review. You can find practice problems on [Khan Academy](https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-negative-exponents/e/exponents_2) and [IXL](https://www.ixl.com/math/algebra-1/negative-exponents) (click the hyperlinks). You should sign in using your Argosy email before starting.
+Below is a video if you would like more review. You can find practice problems on [Khan Academy](https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-negative-exponents/e/exponents_2){target='_blank'} and [IXL](https://www.ixl.com/math/algebra-1/negative-exponents){target='_blank'} (click the hyperlinks). You should sign in using your Argosy email before starting.
 
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/JnpqlXN9Whw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -195,6 +195,7 @@ Testing
   allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'/>
 
 ## Spicy
+
 <!--
 
 ## Power Point Slides
