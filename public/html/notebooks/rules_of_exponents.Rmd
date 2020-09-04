@@ -21,7 +21,7 @@ output:
 #content{
     background:#fcfcfc;
     height:100%;
-    margin-left:150px;
+    margin-left:250px;
     /* margin:auto; */
     max-width:1050px;
     min-height:100%;
@@ -29,8 +29,8 @@ output:
 
 #sidebar {
     color: /*#D9AB16;*/ #B30000;
-    background: /*#113458;*/ #B30000;
-    width: 150px;
+    background: #153881;
+    width: 250px;
 }
 
 #sidebar h2 {
@@ -44,7 +44,7 @@ output:
 }
 
 #sidebar a:hover {
-    background-color: /*#3F4548; #153B81;*/ #FFFFFF;
+    background-color:#FFFFFF;
     color: #000000;
     font-weight: bold;
 }
@@ -80,19 +80,19 @@ div.highlight_red {
     background-color: #EEEEEE;
     background-image: none;
     background-position: 0 0;
-    color: #153B81;
+    color: #9F2042;
 }
 
 #main .nav-pills > li > a:hover {
   color: #FFFFFF !important;
-  background-color: #153B81;
+  background-color: #9F2042;
 }
 
 #main .nav-pills > li.active > a,
 #main .nav-pills > li.active > a:hover,
 #main .nav-pills > li.active > a:focus {
   color: #FFFFFF !important;
-  background-color: #153B81;
+  background-color: #9F2042;
 }
 
 </style>
@@ -119,7 +119,12 @@ rm(new.packages)
 knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE, echo=FALSE)
 ```
 
-
+```{r}
+library(bsplus)
+library(htmltools)
+bs_modal(id = "modal_markdown", title = "", size="large", 
+  body = htmltools::tags$table(height="100%", tags$iframe(src="https://www.desmos.com/scientific", width="100%", height="400", scrolling="no")))
+```
 
 # Negative Exponents
 
@@ -178,6 +183,11 @@ Below is a video if you would like more review. You can find practice problems o
 3. Begin the activity.
 
 </div>
+
+```{r}
+bs_button("Calculator") %>%
+  bs_attach_modal(id_modal = "modal_markdown")
+```
 
 ## Mild
 
