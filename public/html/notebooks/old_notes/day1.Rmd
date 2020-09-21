@@ -1,0 +1,170 @@
+---
+title: "Algebra Lesson Title Goes Here"
+    
+output: 
+  rmdformats::readthedown:
+    self_contained: true
+  html_notebook:
+    number_sections: no
+    toc: yes
+    toc_float:
+      smooth_scroll: yes
+  pdf_document:
+    toc: yes
+---
+
+
+
+```{r include=FALSE}
+
+# Check and install missing libraries
+
+list.of.packages <- c("ggplot2","dplyr", "DT", "readxl", "stringr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[
+  ,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Remove temporary variables
+
+rm(list.of.packages)
+rm(new.packages)
+
+# Manual packages (run once)
+# remotes::install_github("juba/rmdformats")
+```
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE, echo=FALSE)
+```
+
+# Vocabulary
+
+## Origin
+
+The center of the graph. It is _always_ the point (0,0).
+
+<iframe src="https://www.desmos.com/calculator/4y9p90qzc3?embed" width="300px" height="300px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## Quadrant
+
+The four quarters (or '_boxes_') that make up a graph. We use roman numerals 
+when naming the four quadrants. The first quadrant is at the top right, 
+and we continue counter-clockwise. 
+
+**Quarter** I begins at the top right. Any point in this area is said to be in 
+_Quadrant I_.
+
+**Quarter II** begins at the top left. Any point in this area is said to be in 
+_Quadrant II_.
+
+**Quarter III** is at the bottom left. Any point in this area is said to be in 
+_Quadrant III_.
+
+**Quarter IV** is at the bottom right. Any point in this area is said to be in 
+_Quadrant IV_.
+
+<iframe src="https://www.desmos.com/calculator/egpevp9ne4?embed" width="300px" height="300px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## X-Axis
+
+The horizontal line on the graph, indicating movement from left to right.
+
+<iframe src="https://www.desmos.com/calculator/dznsj8uvho?embed" width="300px" height="300px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## X-Coordinate
+
+The first value in a point, indicating movement from left to right starting at the origin. Beginning at (0,0), a **positive** x-coordinate means go **right**, and a **negative** x-coordinate means go **left**.
+
+<iframe src="https://www.desmos.com/calculator/lzgjcvaq8h?embed" width="300px" height="300px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+In a table, the x-coordinate is in the first column. Try changing the values of the first column below.
+
+<iframe src="https://www.desmos.com/calculator/hhmje8oflr" width="560px" height="315px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## Y-Axis
+
+<iframe src="https://www.desmos.com/calculator/r9hjavxkjj?embed" width="300px" height="300px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## Y-Coordinate
+
+<iframe src="https://www.desmos.com/calculator/800pyzlilu?embed" width="300px" height="300px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<iframe src="https://www.desmos.com/calculator/sinrytdtuo" width="560px" height="315px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## Coordinate Plane
+
+The graph itself created by the intersection of the x- and y-axes. It's the te for the same graph as before.
+
+<iframe src="https://www.desmos.com/calculator/eswnmrqoa6?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## Coordinate Pair
+
+The set of both numbers in parentheses _(x,y)_ representing a single _point_ on the coordinate plane.
+
+
+
+# Graphing on the Coordinate Plane
+
+## Plotting a point
+
+<b>1. Identify the x- and y-coordinates of the coordinate pair.</b>
+
+The first number of a coordinate pair is the _x-coordinate_. If it's **positive**, you will move **right**, and if it's **negative**, you will move **left**. You _must_ begin by moving horizontally when plotting points.
+
+The second number of a coordinate pair is the _y-coordinate_. If it's **positive**, you will move **up**, and if it's **negative**, you will move **down**.
+
+<b>2. From the origin, follow the coordinates and draw a point.</b>
+
+Go to the origin (0,0) and
+
+1. Move left or right (x-coordinate)
+
+2. Move  up or down (y-coordinate)
+
+3. Draw the point
+
+<b>Example</b>
+
+Plot the coordinate pair (5, -5).
+
+x-coordinate: 5 &#x27A1; move 5 to the right
+
+<iframe src="https://www.desmos.com/calculator/mp3l074ndx?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+y-coordinate: -5 &#x27A1; move 5 down
+
+<iframe src="https://www.desmos.com/calculator/e8wusbexi4?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<iframe src="https://www.desmos.com/calculator/kznisrpz9v?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## Practice
+
+<iframe src="https://www.desmos.com/calculator/xghtgwv1au" width="560px" height="315px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<details><summary>Show Answer</summary>
+
+
+<iframe src="https://www.desmos.com/calculator/z0swxadr3v" width="560px" height="315px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+</details>
+
+<!--
+
+## Power Point Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQMBdagNW9dyhEpPG1gSz9f2dPlpFlnGQvd5kYYFru4Ggc25kzdcXQRFegT9iQiJl3VbsUEvkuzIGoY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="560" height="315" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+## Youtube Video
+
+ <iframe src="https://www.youtube.com/embed/MfNa7J6Zfcs"
+  frameborder="0" width="560" height="315" allow="accelerometer; autoplay;
+  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+<details><summary>Hidden text</summary>no longer hidden</details>
+
+ -->
+

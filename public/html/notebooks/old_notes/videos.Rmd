@@ -1,0 +1,79 @@
+---
+title: "Math Video Review"
+    
+output: 
+  rmdformats::readthedown:
+    self_contained: true
+  html_notebook:
+    number_sections: no
+    toc: yes
+    toc_float:
+      smooth_scroll: yes
+  pdf_document:
+    toc: yes
+---
+
+<style>
+
+p.underline > span {
+  display:block;
+  width:100%;
+  padding-bottom:3px; /* how low underline should be */
+  border-bottom:1px #9F2042; /*underline color*/
+}
+
+</style>
+
+```{r include=FALSE}
+
+# Check and install missing libraries
+
+list.of.packages <- c("ggplot2","dplyr", "DT", "readxl", "stringr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[
+  ,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+# Remove temporary variables
+
+rm(list.of.packages)
+rm(new.packages)
+
+# Manual packages (run once)
+# remotes::install_github("juba/rmdformats")
+```
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA, message = FALSE, warning = FALSE, echo=FALSE)
+```
+
+<hr>
+
+# Equations
+
+## Decimals & Fractions
+
+<iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/BOIA9wsM4ok" frameborder="0" 
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+  picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+## Strategy: Remove Decimals First
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MfNa7J6Zfcs"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+  picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+# Order of Operations
+
+## Video goes here
+
+## And here
+
+<details><summary>answers</summary>here's the solution</details>
+
+ 
+
