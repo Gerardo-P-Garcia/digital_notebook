@@ -1,0 +1,10 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+    self_contained: true
+---
+
+$$\begin{align}
+3x+4 &= 45&&\text{Hi}\\4x-84&=-9\end{align}$$
