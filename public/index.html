@@ -2659,7 +2659,13 @@ window.FlexDashboardComponents.push({
 .flowing-content-shim {
   overflow-y: hidden !important;
 }
-
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
 .full_height{
   height:82vh;
 }
@@ -2804,7 +2810,7 @@ MathJax = {
 </div>
 <!---------------------------------------------------------ALGEBRA I   UNIT 0-->
 <div id="unit-0-math-rules" class="section level1" data-navmenu="Algebra 1">
-<h1>Unit 0: Math Rules</h1>
+<h1>Unit 0: Math Rules</h1>
 <div id="column" class="section level2 tabset tabset-pills tabset-fade">
 <h2>Column</h2>
 <div id="rules-of-exponents" class="section level3">
@@ -2875,9 +2881,12 @@ MathJax = {
 <div class="panel panel-success">
 <div class="panel-body"><p>When we have <i>any</i> base with an exponent of 0, the answer is <u>always 1</u>.</p>
 
-<p>\[\begin{align}2^{0} &= 1\\\\
+<p>\[\begin{align}
+0^{0} &= 1\\\\
+2^{0} &= 1\\\\
 3^{0} &= 1\\\\
 (-4)^{0} &= 1\\\\
+(\frac{1}{5})^{0} &= 1\\\\
 9,999,999,999,999^{0} &= 1
 \end{align}\]</p>
 </div>
@@ -2896,7 +2905,7 @@ MathJax = {
 </h4>
 </div>
 <div aria-labelledby="negative_exponents_0-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="negative_exponents_0-side-accordion-0-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>Flip the term; the exponent is now positive.</strong></p>
+<div class="panel-body" style=""><p>Flip the base and its exponent vertically.</p>
 </div>
 </div>
 </div>
@@ -2906,7 +2915,9 @@ MathJax = {
 </h4>
 </div>
 <div aria-labelledby="negative_exponents_0-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0-side-accordion-1-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>write and copy from very first slide here; align with others</strong></p>
+<div class="panel-body" style=""><p>\[\begin{align}
+  3^{-19} &= \text{?}
+\end{align}\]</p>
 </div>
 </div>
 </div>
@@ -2916,7 +2927,10 @@ MathJax = {
 </h4>
 </div>
 <div aria-labelledby="negative_exponents_0-side-accordion-2-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0-side-accordion-2-collapse" role="tabpanel">
-<div class="panel-body" style=""><p>Solve zero exponents</p>
+<div class="panel-body" style=""><p>\[
+\begin{align}
+\frac{1}{g^{-5}} &= \text{?}
+\end{align}\]</p>
 </div>
 </div>
 </div>
@@ -2926,7 +2940,9 @@ MathJax = {
 </h4>
 </div>
 <div aria-labelledby="negative_exponents_0-side-accordion-3-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0-side-accordion-3-collapse" role="tabpanel">
-<div class="panel-body" style=""><p>Solve zero exponents</p>
+<div class="panel-body" style=""><p>\[\begin{align}
+  \frac{1}{x^{3}} &= \text{?}
+\end{align}\]</p>
 </div>
 </div>
 </div>
@@ -2936,9 +2952,9 @@ MathJax = {
 </h4>
 </div>
 <div aria-labelledby="negative_exponents_0-side-accordion-4-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0-side-accordion-4-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>Continue without signing in</strong><br><hr></p>
+<div class="panel-body" style=""><p>To begin the card sort, <strong>continue without signing in</strong><br><hr></p>
 
-<p><a href='https://www.ixl.com/math/algebra-1/negative-exponents'target='_blank'>IXL Practice</a></p>
+<p>Sign into <a href='https://www.ixl.com/math/algebra-1/negative-exponents'target='_blank'>IXL</a> for more practice</p>
 </div>
 </div>
 </div>
@@ -2958,19 +2974,51 @@ If there is no fraction, write a 1 underneath first.</p>
 </div>
 <div class="collapse" id="negative_exponents_0-side-accordion-1-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>screenshot of example with display at the bottom</p>
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Write \(3^{-19}\) as a fraction without a negative exponent.</em><br><br></p>
+
+<p><details><summary>Explain</summary></p>
+
+<p>\[\begin{align}
+  3^{-19} &= && \text{The exponent is -19 and the base is 3}\\\\
+  \frac{3\color{red}^{-19}\color{black}}{1} &= && \text{Write the term as a fraction}\\\\
+  &= \frac{1}{3\color{blue}^{19}}\color{black} && \text{Flip the term and remove the negative from the exponent}
+\end{align}\]</p>
+
+<p></details></p>
 </div>
 </div>
 </div>
 <div class="collapse" id="negative_exponents_0-side-accordion-2-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Write \(\frac{1}{g^{-5}}\) as a whole number without a negative exponent.</em></p>
+
+<p><details><summary>Explain</summary>
+\[\begin{align}
+  \frac{1}{g\color{red}^{-5}\color{black}} &= && \text{The exponent is -5 and the base is g}\\\\
+  &= \frac{g\color{blue}^{5}\color{black}}{1} && \text{Flip the term and remove the negative from the exponent}\\\\
+  &= g\color{blue}^{5}\color{black} && \text{Simplify the answer}
+\end{align}\]
+</details></p>
 </div>
 </div>
 </div>
 <div class="collapse" id="negative_exponents_0-side-accordion-3-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Rewrite \(\frac{1}{x^{3}}\) with a negative exponent.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    \frac{1}{x\color{blue}^{3}\color{black}} &= && \text{The exponent is 3 and the base is x}\\\\
+    &= \frac{x\color{red}^{-3}\color{black}}{1} && \text{Flip the term and add a negative to the exponent}\\\\
+    &= x\color{red}^{-3}\color{black} && \text{Simplify the answer}
+  \end{align}\]
+</details></p>
 </div>
 </div>
 </div>
@@ -2994,7 +3042,7 @@ If there is no fraction, write a 1 underneath first.</p>
 </h4>
 </div>
 <div aria-labelledby="multiply_exponents_0-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="multiply_exponents_0-side-accordion-0-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+<div class="panel-body" style=""><p>Add the exponents, but only if the bases are the same.</p>
 </div>
 </div>
 </div>
@@ -3004,7 +3052,9 @@ If there is no fraction, write a 1 underneath first.</p>
 </h4>
 </div>
 <div aria-labelledby="multiply_exponents_0-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0-side-accordion-1-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+<div class="panel-body" style=""><p>\[\begin{align}
+5^{4}\cdot5^{9} &= ?
+\end{align}\]</p>
 </div>
 </div>
 </div>
@@ -3014,7 +3064,9 @@ If there is no fraction, write a 1 underneath first.</p>
 </h4>
 </div>
 <div aria-labelledby="multiply_exponents_0-side-accordion-2-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0-side-accordion-2-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>Example 2</strong></p>
+<div class="panel-body" style=""><p>\[\begin{align}
+18^{-14}\cdot18^{0} &= ?
+\end{align}\]</p>
 </div>
 </div>
 </div>
@@ -3024,7 +3076,9 @@ If there is no fraction, write a 1 underneath first.</p>
 </h4>
 </div>
 <div aria-labelledby="multiply_exponents_0-side-accordion-3-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0-side-accordion-3-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>Example 3</strong></p>
+<div class="panel-body" style=""><p>\[\begin{align}
+a^{-4}\cdot (-a)^{5}\cdot a^{-5}
+\end{align}\]</p>
 </div>
 </div>
 </div>
@@ -3034,7 +3088,9 @@ If there is no fraction, write a 1 underneath first.</p>
 </h4>
 </div>
 <div aria-labelledby="multiply_exponents_0-side-accordion-4-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0-side-accordion-4-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+<div class="panel-body" style=""><p>To begin the card sort, <strong>continue without signing in</strong><br><hr></p>
+
+<p>Sign into <a href='https://www.ixl.com/math/algebra-1/multiplication-with-exponents'target='_blank'>IXL</a> for more practice</p>
 </div>
 </div>
 </div>
@@ -3043,31 +3099,86 @@ If there is no fraction, write a 1 underneath first.</p>
 <div class="col-sm-10" id="multiply_exponents_0-main">
 <div class="collapse in" id="multiply_exponents_0-side-accordion-0-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p>The <b><em>Product Rule</em></b> tells us to add the exponents whenever 2 equal bases are being multiplied.<br><br></p>
+
+<p>Here&#39;s an example:<br><br></p>
+
+<p>\[\begin{align}
+  3^{5} \cdot 3^{3} &= && \text{The base is 3 while the exponents are 5 and 3}\\\\
+  &= 3^{\color{red}5 + 3\color{black}} && \text{Keep the base and add the exponents}\\\\
+  &= 3^{\color{red}8\color{black}}
+\end{align}\]</p>
+
+<p>&hellip; but here&#39;s why:</p>
+
+<p>\[\begin{align}
+  \color{blue}3^{5}\color{black}\cdot\color{red}3^{3}\color{black} &= && \text{Rewrite the problem}\\\\
+  \color{blue}3\cdot3\cdot3\cdot3\cdot3\color{black}\cdot\color{red}3\cdot3\cdot3\color{black} &= && \text{Write out the multiplication}\\\\
+  3\cdot3\cdot3\cdot3\cdot3\cdot3\cdot3\cdot3 &= && \text{Suddenly it&rsquo;s just 1 long chain of multiplication}\\\\
+  &= 3^{8} && \text{&hellip; and rewrite the repeated multiplication as an exponent}
+\end{align}\]</p>
+
+<p>This pattern occurs whenever equal bases are being multiplied together. We are adding as a shortcut because this &ldquo;chain&rdquo; of repeating multiplication is getting longer.</p>
 </div>
 </div>
 </div>
 <div class="collapse" id="multiply_exponents_0-side-accordion-1-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Rewrite \(5^{4}\cdot5^{9}\) as a single exponent. Do not find the product.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    5^{4}\cdot5^{9} &= && \text{The base is 5 and the exponents are 4 and 9}\\\\
+    &= 5\color{red}^{4 + 9}\color{black} && \text{Rewrite the base and add the exponents}\\\\
+    &= 5\color{red}^{13}\color{black} && \text{Leave the answer as an exponent}
+  \end{align}\]
+</details></p>
 </div>
 </div>
 </div>
 <div class="collapse" id="multiply_exponents_0-side-accordion-2-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Rewrite \(18^{-14}\cdot18^{0}\) as a single exponent. Do not find the product.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    18^{-14}\cdot18^{0} &= && \text{The base is 18 and the exponents are -14 and 0}\\\\
+    &= 18\color{red}^{-14 + 0}\color{black} && \text{Rewrite the base and add the exponents}\\\\
+    &= 18\color{red}^{-14}\color{black} && \text{Leave the answer as an exponent}
+  \end{align}\]</p>
+
+<p>Please note that ugly numbers do not change a thing.
+</details></p>
 </div>
 </div>
 </div>
 <div class="collapse" id="multiply_exponents_0-side-accordion-3-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Simplify \(a^{-4}\cdot (-a)^{5}\cdot a^{-5}\) as much as possible.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    a^{-4}\cdot (-a)^{5}\cdot a^{-5} &= && \text{This is way too messy, so let&rsquo;s reorganize it}\\\\
+    \color{red}a^{-4}\cdot a^{-5}\color{black}\cdot (-a)^{5} &= && \text{Rewrite with like terms next to each other}\\\\
+    \color{red}a^{-4 + (-5)}\color{black}\cdot (-a)^{5} &=&& \text{The 2 different bases are a and -a}\\\\
+    &= \color{red}a^{-9}\color{black}\cdot (-a)^{5} && \text{This is as far as we can go}
+  \end{align}\]</p>
+
+<p>Please note that <em>a</em> and <em>-a</em> are not like terms and cannot be combined.
+</details></p>
 </div>
 </div>
 </div>
 <div class="collapse" id="multiply_exponents_0-side-accordion-4-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>main</p>
+<div class="panel-body"><div class='full_height'><iframe src='https://student.desmos.com/join/kbcc8t' width='100%' 
+  height='100%'></iframe></div>
 </div>
 </div>
 </div>
@@ -3124,7 +3235,7 @@ If there is no fraction, write a 1 underneath first.</p>
 </h4>
 </div>
 <div aria-labelledby="divide_exponents_0-side-accordion-4-heading" class="panel-collapse collapse panel-collapse-leader" id="divide_exponents_0-side-accordion-4-collapse" role="tabpanel">
-<div class="panel-body" style=""><p><strong>Slide decks from class</strong></p>
+<div class="panel-body" style=""><p><strong>[empty]</strong></p>
 </div>
 </div>
 </div>
@@ -3133,13 +3244,13 @@ If there is no fraction, write a 1 underneath first.</p>
 <div class="col-sm-10" id="divide_exponents_0-main">
 <div class="collapse in" id="divide_exponents_0-side-accordion-0-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p><strong>[empty]</strong></p>
 </div>
 </div>
 </div>
 <div class="collapse" id="divide_exponents_0-side-accordion-1-follow">
 <div class="panel panel-success">
-<div class="panel-body"><p>TBD</p>
+<div class="panel-body"><p><strong>[empty]</strong></p>
 </div>
 </div>
 </div>
@@ -3258,23 +3369,779 @@ $('.panel-collapse-leader').on('hide.bs.collapse', function () {
 
 
 </script></p>
+<!--------------------------------------------------------------------New tab-->
+<!--
+### <span style="color:black"><b>Classifying Numbers</b></span>
+
+
+<div class="knitr-options" data-fig-width="576" data-fig-height="460"></div>
+<div class="row" id="tab_classify_numbers_0">
+<div class="col-sm-2" id="tab_classify_numbers_0-side">
+<div id="tab_classify_numbers_0-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="tab_classify_numbers_0-side-accordion-0">
+<div id="tab_classify_numbers_0-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#tab_classify_numbers_0-side-accordion-0-collapse" data-parent="#tab_classify_numbers_0-side-accordion" aria-expanded="true" aria-controls="tab_classify_numbers_0-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Zero Exponents</strong></p>
+</h4>
+</div>
+<div aria-labelledby="tab_classify_numbers_0-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="tab_classify_numbers_0-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style="padding-top: 0px; padding-bottom: 0px;"></div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="tab_classify_numbers_0-side-accordion-1">
+<div id="tab_classify_numbers_0-side-accordion-1-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#tab_classify_numbers_0-side-accordion-1-collapse" data-parent="#tab_classify_numbers_0-side-accordion" aria-expanded="true" aria-controls="tab_classify_numbers_0-side-accordion-1-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Negative Exponents</strong></p>
+</h4>
+</div>
+<div aria-labelledby="tab_classify_numbers_0-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="tab_classify_numbers_0-side-accordion-1-collapse" role="tabpanel">
+<div class="panel-body" style="padding-top: 0px; padding-bottom: 0px;"></div>
 </div>
 </div>
 </div>
-<div id="unit-1" class="section level1" data-navmenu="Algebra 1">
-<h1>Unit 1</h1>
 </div>
-<div id="unit-0-invisible-math-rules" class="section level1" data-navmenu="Geometry">
-<h1>Unit 0: Invisible Math Rules</h1>
+<div class="col-sm-10" id="tab_classify_numbers_0-main">
+<div class="collapse in" id="tab_classify_numbers_0-side-accordion-0-follow">
+<div class="row" id="classify_numbers_0">
+<div class="col-sm-2" id="classify_numbers_0-side">
+<div id="classify_numbers_0-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="classify_numbers_0-side-accordion-0">
+<div id="classify_numbers_0-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#classify_numbers_0-side-accordion-0-collapse" data-parent="#classify_numbers_0-side-accordion" aria-expanded="true" aria-controls="classify_numbers_0-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Notes</strong></p>
+</h4>
+</div>
+<div aria-labelledby="classify_numbers_0-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="classify_numbers_0-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style=""><p><b>Anything to the power of 0 is always 1.</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-10" id="classify_numbers_0-main">
+<div class="collapse in" id="classify_numbers_0-side-accordion-0-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>When we have <i>any</i> base with an exponent of 0, the answer is <u>always 1</u>.</p>
+
+<p>\[\begin{align}
+0^{0} &= 1\\\\
+2^{0} &= 1\\\\
+3^{0} &= 1\\\\
+(-4)^{0} &= 1\\\\
+(\frac{1}{5})^{0} &= 1\\\\
+9,999,999,999,999^{0} &= 1
+\end{align}\]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse" id="tab_classify_numbers_0-side-accordion-1-follow">
+<div class="row" id="classify_0">
+<div class="col-sm-2" id="classify_0-side">
+<div id="classify_0-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="classify_0-side-accordion-0">
+<div id="classify_0-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#classify_0-side-accordion-0-collapse" data-parent="#classify_0-side-accordion" aria-expanded="true" aria-controls="classify_0-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Notes</strong></p>
+</h4>
+</div>
+<div aria-labelledby="classify_0-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="classify_0-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>Flip the base and its exponent vertically.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="classify_0-side-accordion-1">
+<div id="classify_0-side-accordion-1-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#classify_0-side-accordion-1-collapse" data-parent="#classify_0-side-accordion" aria-expanded="true" aria-controls="classify_0-side-accordion-1-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 1</strong></p>
+</h4>
+</div>
+<div aria-labelledby="classify_0-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="classify_0-side-accordion-1-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[\begin{align}
+  3^{-19} &= \text{?}
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="classify_0-side-accordion-2">
+<div id="classify_0-side-accordion-2-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#classify_0-side-accordion-2-collapse" data-parent="#classify_0-side-accordion" aria-expanded="true" aria-controls="classify_0-side-accordion-2-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 2</strong></p>
+</h4>
+</div>
+<div aria-labelledby="classify_0-side-accordion-2-heading" class="panel-collapse collapse panel-collapse-leader" id="classify_0-side-accordion-2-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[
+\begin{align}
+\frac{1}{g^{-5}} &= \text{?}
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="classify_0-side-accordion-3">
+<div id="classify_0-side-accordion-3-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#classify_0-side-accordion-3-collapse" data-parent="#classify_0-side-accordion" aria-expanded="true" aria-controls="classify_0-side-accordion-3-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 3</strong></p>
+</h4>
+</div>
+<div aria-labelledby="classify_0-side-accordion-3-heading" class="panel-collapse collapse panel-collapse-leader" id="classify_0-side-accordion-3-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[\begin{align}
+  \frac{1}{x^{3}} &= \text{?}
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="classify_0-side-accordion-4">
+<div id="classify_0-side-accordion-4-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#classify_0-side-accordion-4-collapse" data-parent="#classify_0-side-accordion" aria-expanded="true" aria-controls="classify_0-side-accordion-4-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Practice</strong></p>
+</h4>
+</div>
+<div aria-labelledby="classify_0-side-accordion-4-heading" class="panel-collapse collapse panel-collapse-leader" id="classify_0-side-accordion-4-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>To begin the card sort, <strong>continue without signing in</strong><br><hr></p>
+
+<p>Sign into <a href='https://www.ixl.com/math/algebra-1/negative-exponents'target='_blank'>IXL</a> for more practice</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-10" id="classify_0-main">
+<div class="collapse in" id="classify_0-side-accordion-0-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>When a base has a negative exponent, the term needs to the opposite side of the fraction.<br><br>
+If there is no fraction, write a 1 underneath first.</p>
+
+<p>\[\begin{align}3\color{red}^{-4}\color{black} &= && \text{The exponent is -4 and the base is 3}\\\\
+\frac{3\color{red}^{-4}}{\color{black}1} &= && \text{Write the base as a fraction}\\\\
+&= \frac{1}{3\color{blue}^{4}}\color{black} && \text{Flip and make the exponent positive}\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="collapse" id="classify_0-side-accordion-1-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Write \(3^{-19}\) as a fraction without a negative exponent.</em><br><br></p>
+
+<p><details><summary>Explain</summary></p>
+
+<p>\[\begin{align}
+  3^{-19} &= && \text{The exponent is -19 and the base is 3}\\\\
+  \frac{3\color{red}^{-19}\color{black}}{1} &= && \text{Write the term as a fraction}\\\\
+  &= \frac{1}{3\color{blue}^{19}}\color{black} && \text{Flip the term and remove the negative from the exponent}
+\end{align}\]</p>
+
+<p></details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="classify_0-side-accordion-2-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Write \(\frac{1}{g^{-5}}\) as a whole number without a negative exponent.</em></p>
+
+<p><details><summary>Explain</summary>
+\[\begin{align}
+  \frac{1}{g\color{red}^{-5}\color{black}} &= && \text{The exponent is -5 and the base is g}\\\\
+  &= \frac{g\color{blue}^{5}\color{black}}{1} && \text{Flip the term and remove the negative from the exponent}\\\\
+  &= g\color{blue}^{5}\color{black} && \text{Simplify the answer}
+\end{align}\]
+</details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="classify_0-side-accordion-3-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Rewrite \(\frac{1}{x^{3}}\) with a negative exponent.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    \frac{1}{x\color{blue}^{3}\color{black}} &= && \text{The exponent is 3 and the base is x}\\\\
+    &= \frac{x\color{red}^{-3}\color{black}}{1} && \text{Flip the term and add a negative to the exponent}\\\\
+    &= x\color{red}^{-3}\color{black} && \text{Simplify the answer}
+  \end{align}\]
+</details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="classify_0-side-accordion-4-follow">
+<div class="panel panel-success">
+<div class="panel-body"><div class='full_height'><iframe src='https://student.desmos.com/join/w7snyu' width='100%' 
+  height='100%'></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+-->
+</div>
+</div>
+</div>
+<div id="unit-0-math-rules-1" class="section level1" data-navmenu="Geometry">
+<h1>Unit 0: Math Rules</h1>
 <div id="column-1" class="section level2 tabset tabset-pills tabset-fade">
 <h2>Column</h2>
-<div id="invisible-math-rules" class="section level3">
-<h3><span style="color:black"><b>Invisible Math Rules</b></span></h3>
+<div id="rules-of-exponents-1" class="section level3">
+<h3><span style="color:black"><b>Rules of Exponents</b></span></h3>
+<div class="knitr-options" data-fig-width="576" data-fig-height="460">
+
+</div>
+<p><div class="row" id="math_rules_0_geo">
+<div class="col-sm-2" id="math_rules_0_geo-side">
+<div id="math_rules_0_geo-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="math_rules_0_geo-side-accordion-0">
+<div id="math_rules_0_geo-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#math_rules_0_geo-side-accordion-0-collapse" data-parent="#math_rules_0_geo-side-accordion" aria-expanded="true" aria-controls="math_rules_0_geo-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Zero Exponents</strong></p>
+</h4>
+</div>
+<div aria-labelledby="math_rules_0_geo-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="math_rules_0_geo-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style="padding-top: 0px; padding-bottom: 0px;"></div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="math_rules_0_geo-side-accordion-1">
+<div id="math_rules_0_geo-side-accordion-1-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#math_rules_0_geo-side-accordion-1-collapse" data-parent="#math_rules_0_geo-side-accordion" aria-expanded="true" aria-controls="math_rules_0_geo-side-accordion-1-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Negative Exponents</strong></p>
+</h4>
+</div>
+<div aria-labelledby="math_rules_0_geo-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="math_rules_0_geo-side-accordion-1-collapse" role="tabpanel">
+<div class="panel-body" style="padding-top: 0px; padding-bottom: 0px;"></div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="math_rules_0_geo-side-accordion-2">
+<div id="math_rules_0_geo-side-accordion-2-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#math_rules_0_geo-side-accordion-2-collapse" data-parent="#math_rules_0_geo-side-accordion" aria-expanded="true" aria-controls="math_rules_0_geo-side-accordion-2-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Multiply Exponents</strong></p>
+</h4>
+</div>
+<div aria-labelledby="math_rules_0_geo-side-accordion-2-heading" class="panel-collapse collapse panel-collapse-leader" id="math_rules_0_geo-side-accordion-2-collapse" role="tabpanel">
+<div class="panel-body" style="padding-top: 0px; padding-bottom: 0px;"></div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="math_rules_0_geo-side-accordion-3">
+<div id="math_rules_0_geo-side-accordion-3-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#math_rules_0_geo-side-accordion-3-collapse" data-parent="#math_rules_0_geo-side-accordion" aria-expanded="true" aria-controls="math_rules_0_geo-side-accordion-3-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Divide Exponents</strong></p>
+</h4>
+</div>
+<div aria-labelledby="math_rules_0_geo-side-accordion-3-heading" class="panel-collapse collapse panel-collapse-leader" id="math_rules_0_geo-side-accordion-3-collapse" role="tabpanel">
+<div class="panel-body" style="padding-top: 0px; padding-bottom: 0px;"></div>
 </div>
 </div>
 </div>
-<div id="desmos-graphing-calculator" class="section level1" data-navmenu="Tools">
-<h1>Desmos Graphing Calculator</h1>
+</div>
+<div class="col-sm-10" id="math_rules_0_geo-main">
+<div class="collapse in" id="math_rules_0_geo-side-accordion-0-follow">
+<div class="row" id="zero_exponents_0_geo">
+<div class="col-sm-2" id="zero_exponents_0_geo-side">
+<div id="zero_exponents_0_geo-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="zero_exponents_0_geo-side-accordion-0">
+<div id="zero_exponents_0_geo-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#zero_exponents_0_geo-side-accordion-0-collapse" data-parent="#zero_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="zero_exponents_0_geo-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Notes</strong></p>
+</h4>
+</div>
+<div aria-labelledby="zero_exponents_0_geo-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="zero_exponents_0_geo-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style=""><p><b>Anything to the power of 0 is always 1.</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-10" id="zero_exponents_0_geo-main">
+<div class="collapse in" id="zero_exponents_0_geo-side-accordion-0-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>When we have <i>any</i> base with an exponent of 0, the answer is <u>always 1</u>.</p>
+
+<p>\[\begin{align}
+0^{0} &= 1\\\\
+2^{0} &= 1\\\\
+3^{0} &= 1\\\\
+(-4)^{0} &= 1\\\\
+(\frac{1}{5})^{0} &= 1\\\\
+9,999,999,999,999^{0} &= 1
+\end{align}\]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse" id="math_rules_0_geo-side-accordion-1-follow">
+<div class="row" id="negative_exponents_0_geo">
+<div class="col-sm-2" id="negative_exponents_0_geo-side">
+<div id="negative_exponents_0_geo-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="negative_exponents_0_geo-side-accordion-0">
+<div id="negative_exponents_0_geo-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#negative_exponents_0_geo-side-accordion-0-collapse" data-parent="#negative_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="negative_exponents_0_geo-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Notes</strong></p>
+</h4>
+</div>
+<div aria-labelledby="negative_exponents_0_geo-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="negative_exponents_0_geo-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>Flip the base and its exponent vertically.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="negative_exponents_0_geo-side-accordion-1">
+<div id="negative_exponents_0_geo-side-accordion-1-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#negative_exponents_0_geo-side-accordion-1-collapse" data-parent="#negative_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="negative_exponents_0_geo-side-accordion-1-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 1</strong></p>
+</h4>
+</div>
+<div aria-labelledby="negative_exponents_0_geo-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0_geo-side-accordion-1-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[\begin{align}
+  3^{-19} &= \text{?}
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="negative_exponents_0_geo-side-accordion-2">
+<div id="negative_exponents_0_geo-side-accordion-2-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#negative_exponents_0_geo-side-accordion-2-collapse" data-parent="#negative_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="negative_exponents_0_geo-side-accordion-2-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 2</strong></p>
+</h4>
+</div>
+<div aria-labelledby="negative_exponents_0_geo-side-accordion-2-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0_geo-side-accordion-2-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[
+\begin{align}
+\frac{1}{g^{-5}} &= \text{?}
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="negative_exponents_0_geo-side-accordion-3">
+<div id="negative_exponents_0_geo-side-accordion-3-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#negative_exponents_0_geo-side-accordion-3-collapse" data-parent="#negative_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="negative_exponents_0_geo-side-accordion-3-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 3</strong></p>
+</h4>
+</div>
+<div aria-labelledby="negative_exponents_0_geo-side-accordion-3-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0_geo-side-accordion-3-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[\begin{align}
+  \frac{1}{x^{3}} &= \text{?}
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="negative_exponents_0_geo-side-accordion-4">
+<div id="negative_exponents_0_geo-side-accordion-4-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#negative_exponents_0_geo-side-accordion-4-collapse" data-parent="#negative_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="negative_exponents_0_geo-side-accordion-4-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Practice</strong></p>
+</h4>
+</div>
+<div aria-labelledby="negative_exponents_0_geo-side-accordion-4-heading" class="panel-collapse collapse panel-collapse-leader" id="negative_exponents_0_geo-side-accordion-4-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>To begin the card sort, <strong>continue without signing in</strong><br><hr></p>
+
+<p>Sign into <a href='https://www.ixl.com/math/algebra-1/negative-exponents'target='_blank'>IXL</a> for more practice</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-10" id="negative_exponents_0_geo-main">
+<div class="collapse in" id="negative_exponents_0_geo-side-accordion-0-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>When a base has a negative exponent, the term needs to the opposite side of the fraction.<br><br>
+If there is no fraction, write a 1 underneath first.</p>
+
+<p>\[\begin{align}3\color{red}^{-4}\color{black} &= && \text{The exponent is -4 and the base is 3}\\\\
+\frac{3\color{red}^{-4}}{\color{black}1} &= && \text{Write the base as a fraction}\\\\
+&= \frac{1}{3\color{blue}^{4}}\color{black} && \text{Flip and make the exponent positive}\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="collapse" id="negative_exponents_0_geo-side-accordion-1-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Write \(3^{-19}\) as a fraction without a negative exponent.</em><br><br></p>
+
+<p><details><summary>Explain</summary></p>
+
+<p>\[\begin{align}
+  3^{-19} &= && \text{The exponent is -19 and the base is 3}\\\\
+  \frac{3\color{red}^{-19}\color{black}}{1} &= && \text{Write the term as a fraction}\\\\
+  &= \frac{1}{3\color{blue}^{19}}\color{black} && \text{Flip the term and remove the negative from the exponent}
+\end{align}\]</p>
+
+<p></details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="negative_exponents_0_geo-side-accordion-2-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Write \(\frac{1}{g^{-5}}\) as a whole number without a negative exponent.</em></p>
+
+<p><details><summary>Explain</summary>
+\[\begin{align}
+  \frac{1}{g\color{red}^{-5}\color{black}} &= && \text{The exponent is -5 and the base is g}\\\\
+  &= \frac{g\color{blue}^{5}\color{black}}{1} && \text{Flip the term and remove the negative from the exponent}\\\\
+  &= g\color{blue}^{5}\color{black} && \text{Simplify the answer}
+\end{align}\]
+</details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="negative_exponents_0_geo-side-accordion-3-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Rewrite \(\frac{1}{x^{3}}\) with a negative exponent.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    \frac{1}{x\color{blue}^{3}\color{black}} &= && \text{The exponent is 3 and the base is x}\\\\
+    &= \frac{x\color{red}^{-3}\color{black}}{1} && \text{Flip the term and add a negative to the exponent}\\\\
+    &= x\color{red}^{-3}\color{black} && \text{Simplify the answer}
+  \end{align}\]
+</details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="negative_exponents_0_geo-side-accordion-4-follow">
+<div class="panel panel-success">
+<div class="panel-body"><div class='full_height'><iframe src='https://student.desmos.com/join/w7snyu' width='100%' 
+  height='100%'></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse" id="math_rules_0_geo-side-accordion-2-follow">
+<div class="row" id="multiply_exponents_0_geo">
+<div class="col-sm-2" id="multiply_exponents_0_geo-side">
+<div id="multiply_exponents_0_geo-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="multiply_exponents_0_geo-side-accordion-0">
+<div id="multiply_exponents_0_geo-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#multiply_exponents_0_geo-side-accordion-0-collapse" data-parent="#multiply_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="multiply_exponents_0_geo-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Notes</strong></p>
+</h4>
+</div>
+<div aria-labelledby="multiply_exponents_0_geo-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="multiply_exponents_0_geo-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>Add the exponents, but only if the bases are the same.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="multiply_exponents_0_geo-side-accordion-1">
+<div id="multiply_exponents_0_geo-side-accordion-1-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#multiply_exponents_0_geo-side-accordion-1-collapse" data-parent="#multiply_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="multiply_exponents_0_geo-side-accordion-1-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 1</strong></p>
+</h4>
+</div>
+<div aria-labelledby="multiply_exponents_0_geo-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0_geo-side-accordion-1-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[\begin{align}
+5^{4}\cdot5^{9} &= ?
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="multiply_exponents_0_geo-side-accordion-2">
+<div id="multiply_exponents_0_geo-side-accordion-2-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#multiply_exponents_0_geo-side-accordion-2-collapse" data-parent="#multiply_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="multiply_exponents_0_geo-side-accordion-2-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 2</strong></p>
+</h4>
+</div>
+<div aria-labelledby="multiply_exponents_0_geo-side-accordion-2-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0_geo-side-accordion-2-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[\begin{align}
+18^{-14}\cdot18^{0} &= ?
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="multiply_exponents_0_geo-side-accordion-3">
+<div id="multiply_exponents_0_geo-side-accordion-3-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#multiply_exponents_0_geo-side-accordion-3-collapse" data-parent="#multiply_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="multiply_exponents_0_geo-side-accordion-3-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 3</strong></p>
+</h4>
+</div>
+<div aria-labelledby="multiply_exponents_0_geo-side-accordion-3-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0_geo-side-accordion-3-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>\[\begin{align}
+a^{-4}\cdot (-a)^{5}\cdot a^{-5}
+\end{align}\]</p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="multiply_exponents_0_geo-side-accordion-4">
+<div id="multiply_exponents_0_geo-side-accordion-4-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#multiply_exponents_0_geo-side-accordion-4-collapse" data-parent="#multiply_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="multiply_exponents_0_geo-side-accordion-4-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Practice</strong></p>
+</h4>
+</div>
+<div aria-labelledby="multiply_exponents_0_geo-side-accordion-4-heading" class="panel-collapse collapse panel-collapse-leader" id="multiply_exponents_0_geo-side-accordion-4-collapse" role="tabpanel">
+<div class="panel-body" style=""><p>To begin the card sort, <strong>continue without signing in</strong><br><hr></p>
+
+<p>Sign into <a href='https://www.ixl.com/math/algebra-1/multiplication-with-exponents'target='_blank'>IXL</a> for more practice</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-10" id="multiply_exponents_0_geo-main">
+<div class="collapse in" id="multiply_exponents_0_geo-side-accordion-0-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>The <b><em>Product Rule</em></b> tells us to add the exponents whenever 2 equal bases are being multiplied.<br><br></p>
+
+<p>Here&#39;s an example:<br><br></p>
+
+<p>\[\begin{align}
+  3^{5} \cdot 3^{3} &= && \text{The base is 3 while the exponents are 5 and 3}\\\\
+  &= 3^{\color{red}5 + 3\color{black}} && \text{Keep the base and add the exponents}\\\\
+  &= 3^{\color{red}8\color{black}}
+\end{align}\]</p>
+
+<p>&hellip; but here&#39;s why:</p>
+
+<p>\[\begin{align}
+  \color{blue}3^{5}\color{black}\cdot\color{red}3^{3}\color{black} &= && \text{Rewrite the problem}\\\\
+  \color{blue}3\cdot3\cdot3\cdot3\cdot3\color{black}\cdot\color{red}3\cdot3\cdot3\color{black} &= && \text{Write out the multiplication}\\\\
+  3\cdot3\cdot3\cdot3\cdot3\cdot3\cdot3\cdot3 &= && \text{Suddenly it&rsquo;s just 1 long chain of multiplication}\\\\
+  &= 3^{8} && \text{&hellip; and rewrite the repeated multiplication as an exponent}
+\end{align}\]</p>
+
+<p>This pattern occurs whenever equal bases are being multiplied together. We are adding as a shortcut because this &ldquo;chain&rdquo; of repeating multiplication is getting longer.</p>
+</div>
+</div>
+</div>
+<div class="collapse" id="multiply_exponents_0_geo-side-accordion-1-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Rewrite \(5^{4}\cdot5^{9}\) as a single exponent. Do not find the product.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    5^{4}\cdot5^{9} &= && \text{The base is 5 and the exponents are 4 and 9}\\\\
+    &= 5\color{red}^{4 + 9}\color{black} && \text{Rewrite the base and add the exponents}\\\\
+    &= 5\color{red}^{13}\color{black} && \text{Leave the answer as an exponent}
+  \end{align}\]
+</details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="multiply_exponents_0_geo-side-accordion-2-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Rewrite \(18^{-14}\cdot18^{0}\) as a single exponent. Do not find the product.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    18^{-14}\cdot18^{0} &= && \text{The base is 18 and the exponents are -14 and 0}\\\\
+    &= 18\color{red}^{-14 + 0}\color{black} && \text{Rewrite the base and add the exponents}\\\\
+    &= 18\color{red}^{-14}\color{black} && \text{Leave the answer as an exponent}
+  \end{align}\]</p>
+
+<p>Please note that ugly numbers do not change a thing.
+</details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="multiply_exponents_0_geo-side-accordion-3-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>Try this yourself first:<br><br></p>
+
+<p><em>Simplify \(a^{-4}\cdot (-a)^{5}\cdot a^{-5}\) as much as possible.</em></p>
+
+<p><details><summary>Explain</summary>
+  \[\begin{align}
+    a^{-4}\cdot (-a)^{5}\cdot a^{-5} &= && \text{This is way too messy, so let&rsquo;s reorganize it}\\\\
+    \color{red}a^{-4}\cdot a^{-5}\color{black}\cdot (-a)^{5} &= && \text{Rewrite with like terms next to each other}\\\\
+    \color{red}a^{-4 + (-5)}\color{black}\cdot (-a)^{5} &=&& \text{The 2 different bases are a and -a}\\\\
+    &= \color{red}a^{-9}\color{black}\cdot (-a)^{5} && \text{This is as far as we can go}
+  \end{align}\]</p>
+
+<p>Please note that <em>a</em> and <em>-a</em> are not like terms and cannot be combined.
+</details></p>
+</div>
+</div>
+</div>
+<div class="collapse" id="multiply_exponents_0_geo-side-accordion-4-follow">
+<div class="panel panel-success">
+<div class="panel-body"><div class='full_height'><iframe src='https://student.desmos.com/join/kbcc8t' width='100%' 
+  height='100%'></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="collapse" id="math_rules_0_geo-side-accordion-3-follow">
+<div class="row" id="divide_exponents_0_geo">
+<div class="col-sm-2" id="divide_exponents_0_geo-side">
+<div id="divide_exponents_0_geo-side-accordion" class="panel-group" role="tablist" aria-multiselectable="true">
+<div class="panel panel-success" class-active="panel-success" class-inactive="panel-primary" id="divide_exponents_0_geo-side-accordion-0">
+<div id="divide_exponents_0_geo-side-accordion-0-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#divide_exponents_0_geo-side-accordion-0-collapse" data-parent="#divide_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="divide_exponents_0_geo-side-accordion-0-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Notes</strong></p>
+</h4>
+</div>
+<div aria-labelledby="divide_exponents_0_geo-side-accordion-0-heading" class="panel-collapse collapse in panel-collapse-leader" id="divide_exponents_0_geo-side-accordion-0-collapse" role="tabpanel">
+<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="divide_exponents_0_geo-side-accordion-1">
+<div id="divide_exponents_0_geo-side-accordion-1-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#divide_exponents_0_geo-side-accordion-1-collapse" data-parent="#divide_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="divide_exponents_0_geo-side-accordion-1-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 1</strong></p>
+</h4>
+</div>
+<div aria-labelledby="divide_exponents_0_geo-side-accordion-1-heading" class="panel-collapse collapse panel-collapse-leader" id="divide_exponents_0_geo-side-accordion-1-collapse" role="tabpanel">
+<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="divide_exponents_0_geo-side-accordion-2">
+<div id="divide_exponents_0_geo-side-accordion-2-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#divide_exponents_0_geo-side-accordion-2-collapse" data-parent="#divide_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="divide_exponents_0_geo-side-accordion-2-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 2</strong></p>
+</h4>
+</div>
+<div aria-labelledby="divide_exponents_0_geo-side-accordion-2-heading" class="panel-collapse collapse panel-collapse-leader" id="divide_exponents_0_geo-side-accordion-2-collapse" role="tabpanel">
+<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="divide_exponents_0_geo-side-accordion-3">
+<div id="divide_exponents_0_geo-side-accordion-3-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#divide_exponents_0_geo-side-accordion-3-collapse" data-parent="#divide_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="divide_exponents_0_geo-side-accordion-3-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Example 3</strong></p>
+</h4>
+</div>
+<div aria-labelledby="divide_exponents_0_geo-side-accordion-3-heading" class="panel-collapse collapse panel-collapse-leader" id="divide_exponents_0_geo-side-accordion-3-collapse" role="tabpanel">
+<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+</div>
+</div>
+</div>
+<div class="panel panel-primary" class-active="panel-success" class-inactive="panel-primary" id="divide_exponents_0_geo-side-accordion-4">
+<div id="divide_exponents_0_geo-side-accordion-4-heading" class="panel-heading" role="tab" data-toggle="collapse" data-target="#divide_exponents_0_geo-side-accordion-4-collapse" data-parent="#divide_exponents_0_geo-side-accordion" aria-expanded="true" aria-controls="divide_exponents_0_geo-side-accordion-4-collapse" style="cursor: pointer;">
+<h4 class="panel-title"><p><strong>Practice</strong></p>
+</h4>
+</div>
+<div aria-labelledby="divide_exponents_0_geo-side-accordion-4-heading" class="panel-collapse collapse panel-collapse-leader" id="divide_exponents_0_geo-side-accordion-4-collapse" role="tabpanel">
+<div class="panel-body" style=""><p><strong>[empty]</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-10" id="divide_exponents_0_geo-main">
+<div class="collapse in" id="divide_exponents_0_geo-side-accordion-0-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>TBD</p>
+</div>
+</div>
+</div>
+<div class="collapse" id="divide_exponents_0_geo-side-accordion-1-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>TBD</p>
+</div>
+</div>
+</div>
+<div class="collapse" id="divide_exponents_0_geo-side-accordion-2-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>TBD</p>
+</div>
+</div>
+</div>
+<div class="collapse" id="divide_exponents_0_geo-side-accordion-3-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p>TBD</p>
+</div>
+</div>
+</div>
+<div class="collapse" id="divide_exponents_0_geo-side-accordion-4-follow">
+<div class="panel panel-success">
+<div class="panel-body"><p><strong>[empty]</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script>function bsplus_collpase_validator(target, collapse) {
+
+  /* target    element that initiated the event
+   * collapse  element that is acting on the event
+   *
+   * we want to return true/false on the question:
+   *
+   *  does the target (or any parent of the target) have an attribute
+   *  called 'data-parent' with a value the same as the id of a parent of
+   *  the collapse?
+   *
+   *  [name=”value”] - attribute selector
+   *  .closest()
+   */
+
+  var query_id_parent = $(target).closest('[data-parent]').attr('data-parent');
+
+  if (typeof query_id_parent === "undefined"){
+    //console.log("data-parent undefined");
+    //console.log(false);
+    return false;
+  }
+
+  //console.log(query_id_parent);
+  var elem_parent = $(collapse).closest(query_id_parent);
+
+  //console.log(elem_parent);
+  var result = elem_parent.length > 0;
+
+  //console.log(result);
+  return result;
+}
+
+$('.panel-collapse-leader').on('show.bs.collapse', function () {
+
+  /* This function is called whenver an element of class
+   * 'panel-collapse-leader' has been expanded, or shown.
+   */
+
+  var is_valid = false
+  if (typeof event !== 'undefined') {
+    is_valid = bsplus_collpase_validator(event.target, this);
+  } else {
+    //console.log("x40(b): event undefined ");
+    is_valid = true
+  }
+
+  if (is_valid){
+    /*  finds the closest parent with the class name 'panel' */
+    var panel = $(this).closest('.panel');
+
+    /* changes out the class of the panel (changes color) */
+    panel.removeClass(panel.attr('class-inactive'));
+    panel.addClass(panel.attr('class-active'));
+
+    /* find and show the element that follows this panel */
+    var panel_id = panel.attr('id');
+    var follower = $('#'.concat(panel_id).concat('-follow'));
+
+    follower.collapse('show');
+  }
+
+
+});
+
+$('.panel-collapse-leader').on('hide.bs.collapse', function () {
+
+  var is_valid = false
+  if (typeof event !== 'undefined') {
+    is_valid = bsplus_collpase_validator(event.target, this);
+  } else {
+    //console.log("x66(c): event NOT DEFINED");
+    is_valid = true
+  }
+
+  if (is_valid){
+
+    var panel = $(this).closest('.panel');
+
+    panel.removeClass(panel.attr('class-active'));
+    panel.addClass(panel.attr('class-inactive'));
+
+    /* find and show the element that follows this panel */
+    var panel_id = panel.attr('id');
+    var follower = $('#'.concat(panel_id).concat('-follow'));
+
+    follower.collapse('hide');
+  }
+
+});
+
+
+</script></p>
+</div>
+</div>
+</div>
+<div id="graphing-calculator" class="section level1" data-navmenu="Tools">
+<h1>Graphing Calculator</h1>
 <script>;(function () {
 var desmosEnabledFeatures = {"GraphingCalculator":true,"FourFunctionCalculator":true,"ScientificCalculator":true};
 var desmosCommit = '0346259632ce3820c6e570ba5665b2c705aaefe7';
@@ -3360,8 +4227,8 @@ t.getBrailleEquationsGraphing=a,t.getBrailleEquationsBasic=l}),r("loadcss!basic/
   calculator.setExpression({ id: 'graph1', latex: 'y=x^2' });
 </script>
 </div>
-<div id="desmos-geometry-tool" class="section level1" data-navmenu="Tools">
-<h1>Desmos Geometry Tool</h1>
+<div id="geometry-tool" class="section level1" data-navmenu="Tools">
+<h1>Geometry Tool</h1>
 <script>;(function (global) {
   var elt = document.createElement('style');
   
